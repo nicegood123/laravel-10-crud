@@ -12,3 +12,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+
+
+
+// User Routes
+require __DIR__ . '/web/user/user.php';

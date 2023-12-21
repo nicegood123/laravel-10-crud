@@ -20,7 +20,8 @@
                 </li>
 
                 <li>
-                    <a href="chat.html" class="dropdown-toggle no-arrow  {{ Request::is('users') ? 'active' : '' }}">
+                    <a href="{{ route('users.index') }}"
+                        class="dropdown-toggle no-arrow  {{ Request::is('users') ? 'active' : '' }}">
                         <span class="micon bi bi-people"></span>
                         <span class="mtext">Users</span>
                     </a>
